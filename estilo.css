@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500;600;700&display=swap');
+
+*{
+	box-sizing: border-box;
+	font-family: 'Edu TAS Principiante', cursiva;
+	margin: 0;
+	padding: 0;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+/*MENU*/
+.header-contenedor{
+	background: #17143A;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.header-contenedor{
+	max-width: 1500px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+}
+
+ .logo a{
+	font-family: 'Edu TAS Principiante';
+	font-size: 36px;
+	color: #00F0D3;
+	text-decoration: none;
+}
+
+.ul-contenedor{
+	display: flex;
+	list-style: none;
+}
+
+.ul-contenedor li a{
+	text-align: none;
+	text-decoration: none;
+	color: #FFF;
+	margin: 0 15px;
+	padding: 3px;
+	transition: .4s;
+}
+
+
+.ul-contenedor li a:hover{
+	color: #00F0D3;
+}
+
+.nav-responsive{
+	background-color: #00F0D3;
+	color: #FFF;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+/*SECCION PERFIL*/
+
+.inicio{
+	background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+	url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg);
+	background-size: cover;
+	height: 100vh;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+}
+
+.banner{
+	padding: 15px;
+	background-color: #17143A;
+	max-width: 350px;
+	margin: auto;
+	text-align: center;
+	border-radius: 40px;
+
+}
+
+img{
+	width: 30%;
+	margin-top: 40px;
+	border: 5px solid#00F0D3;
+	display: block;
+	margin: auto;
+	border-radius: 1%;
+}
+
+h1{
+	margin-top: 5px;
+	font-size: 38px;
+	font-family: 'Edu TAS Principiante';
+}
+
+h2 {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.redes a{
+	color: #FFF;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #00F0D3;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 5px;
+	font-size: 20px;
+	transition: .3s;
+}
+
+.redes a:hover{
+	background-color: #00F0D3;
+}
+
+
+/*SOBRE MI*/
+
+.sobremi{
+	background-color: #17143A;
+	color: #FFF;
+	padding: 50px 20px;
+}
+
+.sobremi .contenido-sobremi{
+	max-width: 1100px;
+	margin: auto;
+}
+
+.sobremi h2{
+	font-size: 48px;
+	font-family: 'Edu TAS Principiante';
+	text-align: center;
+	padding: 20px 0;
+}
+
+.sobremi .contenido-sobremi p{
+	font: 18px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.sobremi .contenido-sobremi p span{
+	color: ;
+	font-weight: bold;
+}
+
+.fila{
+	display: flex;
+
+}
+
+.fila .col{
+	width: 50%;
+}
+
+.col h3{
+	font-size: 28px;
+	font-family: 'Edu TAS Principiante';
+	margin-bottom: 25px;
+}
+
+.col-ul{
+	list-style: none;
+}
+
+.col-ul li{
+	margin: 12px 0;
+}
+
+.col-ul li strong{
+	display: inline-block;
+	color: #00F0D3;
+	width: 130px;
+}
+
+.col-ul li span{
+	background-color:#00F0D3;
+	padding: 3px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.interes-cont{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.interes-cont .interes{
+	width: 100px;
+	height: 100px;
+	background-color: #252A2E;
+	border-radius: 10px;
+	margin: 0 15px 15px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: .3s;
+}
+
+.interes-cont .interes:hover{
+	background-color: #00F0D3;
+}
+
+.interes-cont .interes i{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.sobremi button{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #fff;
+	width: fit-content;
+	display: block;
+	margin: 20px auto;
+	padding: 10px 22px;
+	font-size: 16px;
+	color: #FFF;
+	position: relative;
+	z-index: 10;
+}
+
+.sobremi button .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #00F0D3;
+	z-index: -1;
+	transition: 1s;
+}
+
+.cv a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.sobremi button:hover .overlay{
+	width: 100%;
+}
+
+
+/*HABILIDADES*/
+
+.habilidades{
+	background-color: #161A3E;
+	color: #FFF;
+	padding: 50px 20px;
+}
+
+.habilidades .contenido-secc{
+	max-width: 1100px;
+	margin: auto;
+}
+
+.habilidades h2{
+	font-size: 48px;
+	font-family: 'Edu TAS Principiante';
+	text-align: center;
+	padding: 20px 0;
+}
+
+.fila-hab{
+	display: flex;
+
+}
+
+.fila-hab .col-hab{
+	width: 50%;
+	padding: 0 20px;
+}
+
+.col-hab h3{
+	font-size: 28px;
+	font-family: 'Edu TAS Principiante';
+	margin-bottom: 25px;
+}
+
+.hab > span{
+	font-weight: bold;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.hab .barra-hab{
+	height: 8px;
+	width: 80%;
+	background-color: #252A2E;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.hab .progreso{
+	background-color: #00F0D3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 8px;
+}
+
+.habilidades .hab .barra-hab span{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: #00F0D3;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+	top: -17px;
+	right: -15px;
+	font-size: 14px;
+}
+
+/*stilo en js*/
+.hab .barra-hab .javascript{
+	width: 0%;
+	animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+	0%{width: 0%;}
+	
+	100%{width: 20%;}
+}
+
+.hab .barra-hab .css{
+	width: 0%;
+	animation: 2s css forwards;
+}
+
+@keyframes css {
+	0%{width: 0%;}
+	
+	100%{width: 85%;}
+}
+
+
+.hab .barra-hab .html{
+	width: 0%;
+	animation: 2s html forwards;
+}
+
+@keyframes html {
+	0%{width: 0%;}
+	
+	100%{width: 90%;}
+}
+
+
+.hab .barra-hab .inglés{
+	width: 0%;
+	animation: 2s inglés forwards;
+}
+
+@keyframes inglés {
+	0%{width: 0%;}
+	
+	100%{width: 25%;}
+}
+
+
+.hab .barra-hab .comunicación {
+	width: 0%;
+	animation: 2s comunicación forwards;
+}
+
+@keyframes comunicación {
+	0%{width: 0%;}
+	
+	100%{width: 80%;}
+}
+
+.hab .barra-hab .trabajoEnEquipo{
+	width: 0%;
+	animation: 2s trabajoEnEquipo forwards;
+}
+
+@keyframes trabajoEnEquipo {
+	0%{width: 0%;}
+	
+	100%{width: 75%;}
+}
+
+
+.hab .barra-hab .dedicación{
+	width: 0%;
+	animation: 2s dedicación forwards;
+}
+
+@keyframes dedicación {
+	0%{width: 0%;}
+	
+	100%{width: 99%;}
+}
+
+/* SECCION PORTFOLIO */
+
+.portfolio{
+	background-color: #252A2E;
+	color: #FFF;
+	padding: 50px 20px;
+}
+
+.portfolio .contenido-port{
+	max-width: 1100px;
+	margin: auto;
+}
+
+.portfolio h2{
+	font-size: 48px;
+	font-family: 'Edu TAS Principiante';
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+.portfolio .galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.portfolio .galeria .proyectos{
+	position: relative;
+	max-width: 340px;
+	height: fit-content;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.portfolio .galeria .proyectos img{
+	width: 100%;
+	display: block;
+}
+
+.proyectos .overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: linear-gradient(rgba(28, 182, 152,.8),rgba(28, 182, 152,.8));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: 1s;
+	font-size: 18px;
+	letter-spacing: 3px;
+	opacity: 0;
+}
+
+
+.proyectos .overlay h3{
+	margin-bottom: 20px;
+	transition: 1s;
+}
+
+.proyectos .overlay:hover{
+	opacity: 1;
+}
+
+.proyectos .overlay:hover{
+	margin-bottom: 0px;
+}
+
+/*CONTACTO*/
+
+.contacto{
+	background-color: #17143A;
+	color: #FFF;
+	padding: 50px;
+}
+
+.contenido-cont{
+	max-width: 1100px;
+	margin: auto;
+}
+
+.contacto h2{
+	font-size: 48px;
+	font-family: 'Edu TAS Principiante';
+	text-align: center;
+	padding: 20px 0;
+}
+
+.fila{
+	display: flex;
+}
+
+.col{
+	width: 50px;
+	padding: 10px;
+	position: relative;
+}
+
+.col input, .col textarea{
+	display: block;
+	width: 100%;
+	padding: 18px;
+	border: none;
+	margin-bottom: 20px;
+	background-color: #252A2E;
+	color: #FFF;
+	font-size: 18px;
+}
+
+button{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #FFF;
+	width: fit-content;
+	display: block;
+	margin: 20px auto;
+	padding: 10px 22px;
+	font-size: 16px;
+	color: #FFF;
+	position: relative;
+	z-index: 10;
+}
+
+button .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #00F0D3;
+	z-index: -1;
+	transition: 1s;
+}
+
+button:hover .overlay{
+	width: 100%;
+}
+
+.col .map{
+	width: 100%;
+	height: 550px;
+}
+
+.col .info{
+	position: absolute;
+	top: 40px;
+	background-color: #252A2E;
+	padding: 20px;
+	width: 350px;
+	left: 50%;
+	transform: translate(-50%, 200%);
+}
+
+
+.info ul{
+	list-style: none;
+}
+
+.info ul li{
+	margin-bottom: 20px;
+}
+
+.info ul li i{
+	color: #00F0D3;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: #252A2E;
+	color: #FFF;
+	padding: 50px 0 30px 0;
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+.redes-footer{
+	margin-bottom: 20px;
+}
+
+.redes-footer a{
+	color: #FFF;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 5px;
+	font-size: 20px;
+	transition: .3s;
+}
+
+.arriba{
+
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #00F0D3;
+	color: #FFF;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -25px;
+	border-radius: 50%;
+	line-height: 50px;
+	font-size: 18px;
+
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:980px){
+	nav{
+		display: none;
+	}
+	.nav-responsive{
+		display: block;
+	}
+	nav.responsive{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 75px;
+		background-color: #17143A;
+		width: 180px;
+	}
+	.responsive ul{
+		display: block !important;
+	}
+	.responsive ul li{
+		border-bottom: 1px solid #FFF;
+		padding: 10px 0;
+	}
+}
+
+@media screen and (max-width:780px){
+	.sobremi .fila{
+		display: block;
+	}
+	.sobremi .fila .col{
+		width: fit-content;
+}
+	.habilidades .fila-hab{
+		display: block;
+	}
+	.habilidades .fila-hab .col-hab{
+		width: 100%;
+	}
+	.habilidades .fila-hab .col-hab .barra-hab{
+		width: 100%;
+	}
+	.portfolio .galeria{
+		display: block;
+		width: 100%;
+	}
+	.portfolio .galeria .proyectos{
+		max-width: 100%;
+	}
+	.portfolio .galeria .proyectos{
+		width: 100%;
+	}
+	.contacto .fila{
+		display: block;
+	}
+	.contacto .fila .col{
+		width: 100%;
+	}

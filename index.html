@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>PortFolio</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<header>
+		<div class="header-contenedor">
+			<div class="logo">
+				<a href="#inicio">Brahian</a>
+			</div>
+			<nav Id="nav">
+				<ul class="ul-contenedor">
+					<li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+					<li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+					<li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+					<li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+					<li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+				</ul>
+			</nav>
+			<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+	</header>
+	<section class="inicio" id="inicio">
+		<div class="banner">
+			<div class="contenedor-imagen">
+				<img src="me.jpeg">
+			</div>
+			<div class="contenedor-h">
+				<h1>BRAHIAN DAVALOS</h1>
+				<h2>Programador Junior</h2>
+				<div class="redes">
+					<a href="https://www.facebook.com/profile.php?id=100006862023829&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://instagram.com/brahiandavalos?igshid=OTh0dndmdHV6M3Bw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://twitter.com/BrahianDav595" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="www.linkedin.com/in/brahian-davalos-37a43820a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sobremi" id="sobremi">
+		<div class="contenido-sobremi">
+				<h2>Sobre Mi</h2>
+				<p><span>Hola, soy Brahian Gabriel Davalos Cabrera.</span>
+				¡Conóceme Mejor!"</p>
+
+				<div class="fila">
+					<div class="col">
+						<h3>Datos Personales</h3>
+						<ul class="col-ul">
+							<li>
+								<strong>Cumpleaños</strong>
+								05-07-1998
+							</li>
+							<li>
+								<strong>Telefono</strong>
+								+543743-595679
+							</li>
+							<li>
+								<strong>Email</strong>
+								bra05ca0798@gmail.com
+							</li>
+							<li>
+								<strong>Website</strong>
+								www.exemple.com
+							</li>
+							<li>
+								<strong>Dirección</strong>
+								Av. Antártida Argentina 758
+							</li>
+							<li>
+								<strong>Cargo</strong>
+									<span>FREELANCE</span>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<h3>Intereses</h3>
+						<div class="interes-cont">
+							<div class="interes">
+								<i class="fa-solid fa-microchip"></i>
+								<span>TECNOLOGIA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-gamepad"></i>
+								<span>JUEGOS</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-headphones"></i>
+								<span>MUSICA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-book-open-reader"></i>
+								<span>LEER</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-person-running"></i>
+								<span>DEPORTES</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-car-side"></i>
+								<span>VIAJAR</span>								
+							</div>
+						</div>
+					</div>
+				</div>
+			<button class="cv">
+				<a download="Curriculum" href="C.V BR.pdf">Descargar CV <i class="fa-solid fa-download"></i></a>
+				<span class="overlay"></span>
+			</button>
+		</div>
+	</section>
+	<section class="habilidades" id="habilidades">
+		<div class="contenido-secc">
+			<h2>Habilidades</h2>
+			<div class="fila-hab">
+				<div class="col-hab">
+					<h3>Habilidades Técnicas</h3>
+					<div class="hab">
+						<span>JavaScript</span>
+							<div class="barra-hab">
+							<div class="progreso">
+							<span>20%</span>
+							</div>
+						</div>
+					</div>
+					<div class="hab">
+						<span>CSS</span>
+							<div class="barra-hab">
+							<div class="progreso">
+							<span>85%</span>
+							</div>
+						</div>
+					</div>
+					<div class="hab">
+						<span>HTML</span>
+							<div class="barra-hab">
+							<div class="progreso">
+							<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="hab">
+						<span>Inglés</span>
+							<div class="barra-hab">
+							<div class="progreso">
+							<span>25%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-hab">
+					<h3>Habilidades Blandas</h3>
+					<div class="hab">
+						<span>Comunicación</span>
+							<div class="barra-hab">
+							<div class="progreso">
+							<span>80%</span>
+							</div>
+						</div>
+					</div>
+					<div class="hab">
+						<span>Trabajo en Equipo</span>
+							<div class="barra-hab">
+							<div class="progreso">
+							<span>75%</span>
+							</div>
+						</div>
+					</div>
+					<div class="hab">
+						<span>Dedicación</span>
+							<div class="barra-hab">
+							<div class="progreso">
+							<span>99%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolio">
+		<div class="contenido-port">
+			<h2>PORTFOLIO</h2>
+			<div class="galeria">
+				<div class="proyectos">
+					<img src="arteando.jpeg" alt="">
+					<div class="overlay">
+						<h3>Diseño Web Arteando</h3>
+						<p>Fotografia</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section class="contacto" id="contacto">
+		<div class="contenido-cont">
+			<h2>Contacto</h2>
+			<div class="fila">
+				<div class="col">
+					<form action="https://formsubmit.co/bra05ca0798@gmail.com" método="POST">
+							<input type="text" placeholder="Tú Nombre" name="nombre">
+							<input type="text" placeholder="Número Teléfonico" name="numero telefonico">
+							<input type="text" placeholder="Dirección de correo" name="email">
+							<input type="text" placeholder="Tema">
+							<textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+							<button>
+								Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+								<span class="overlay"></span>
+							</button>
+							<input type="hidden" name="Enviar" value="https://benevolent-beignet-7557ea.netlify.app">
+							<input type="hidden" name="_captcha" value="false">
+							
+					</form>
+				</div>
+				<div class="col">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d444.23000768306906!2d-55.23496166441801!3d-27.035219408162465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1699278083268!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div class="info">
+						<ul>
+							<li><i class="fa-solid fa-location-dot"></i>Av. Antártida Argentina 758</li>
+							<li><i class="fa-brands fa-whatsapp"></i>Whatsapp: +543743 595679</li>
+							<li><i class="fa-solid fa-envelope"></i>Email: bra05ca0798@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+	<footer id="inicio">
+		<a href="#inicio" class="arriba">
+			<i class="fa-solid fa-angles-up"></i>
+		</a>
+		<div class="redes-footer">
+					<a href="https://www.facebook.com/profile.php?id=100006862023829&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://instagram.com/brahiandavalos?igshid=OTh0dndmdHV6M3Bw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://twitter.com/BrahianDav595" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="www.linkedin.com/in/brahian-davalos-37a43820a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+				</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
