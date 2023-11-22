@@ -205,20 +205,25 @@
 			<h2>Contacto</h2>
 			<div class="fila">
 				<div class="col">
-					<form action="https://formsubmit.co/bra05ca0798@gmail.com" método="POST">
-							<input type="text" placeholder="Tú Nombre" name="nombre">
-							<input type="text" placeholder="Número Teléfonico" name="numero telefonico">
-							<input type="text" placeholder="Dirección de correo" name="email">
-							<input type="text" placeholder="Tema">
-							<textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-							<button>
-								Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-								<span class="overlay"></span>
-							</button>
-							<input type="hidden" name="Enviar" value="https://benevolent-beignet-7557ea.netlify.app">
-							<input type="hidden" name="_captcha" value="false">
+					<form action="" id="form" método="POST">
+													<input type="text" placeholder="Tú Nombre" name="name" required>
+																				<input type="text" placeholder="Número Teléfonico" name="phone" required>
+																											<input type="text" placeholder="Dirección de correo" name="email" required>
+																																		<input type="text" placeholder="Tema" name="theme" required>
+																																									<textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+																																																<button type="submit" id="button" value="Enviar Mensaje">
+																																																								Enviar Mensaje <i class="fa-solid fa-paper-plane"> </i>
+																																																																<span class="overlay"></span>
+																																																																							</button>
+																																																																												</form>
+																																																																																	<script type="text/javascript"
+																																																																																	 						 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+																																																																																							 				<script type="text/javascript">
+																																																																																											  							emailjs.init('uPH--Qu1ZMVI_zn7L')
+																																																																																																						</script>
 							
-					</form>
+						
 				</div>
 				<div class="col">
 					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d444.23000768306906!2d-55.23496166441801!3d-27.035219408162465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1699278083268!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -230,9 +235,7 @@
 						</ul>
 					</div>
 				</div>
-
-			</div>
-			
+			</div>	
 		</div>
 	</section>
 	<footer id="inicio">
