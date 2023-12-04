@@ -471,6 +471,10 @@ h2 {
 	transition: 1s;
 }
 
+.proyectos .overlay a{
+	text-decoration: none;
+}
+
 .proyectos .overlay:hover{
 	opacity: 1;
 }
